@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>这是由jetchou使用javascript开发的产品图片放大镜功能插件</title>
+<style>
+	.magnifierZone{position:relative;margin:0;width:500px; height:500px; overflow: visible; padding: 0;}
+	.picZone{width:500px; height:500px;}
+	.imgSource{width:500px; height:500px;}
+	.arrow{display: none;cursor: move; left:0; top:0;position:absolute;z-index: 1;width:100px; height:100px;background:#ffc016; opacity:0.5;filter: alpha(opacity=50);}
+	.showZone{left:510px;width:400px; height: 400px; top:0;position:absolute;z-index: 1;display: none;}
+	.showImg{ position: relative;width:400px; height:400px; overflow: hidden;  }
+	.showImg img{ position: absolute;}
+</style>
+</head>
+
+<body>
+<div class="magnifierZone">
+	<div  id="picZone" class="picZone">
+		<img id="imgSource" class="imgSource" src="https://www.jiajuz.com/images/201806/goods_img/1222_P_1530212045501.jpg">
+		<span id="arrow" class="arrow" ></span>
+	</div>
+
+	<div id="showZone" class="showZone">
+		<div id="showImg" class="showImg"></div>
+	</div>
+</div>
+<script language="javascript" src="js.js"></script>
+</body>
+</html>
